@@ -1,0 +1,11 @@
+Local Variable:
+    these variable defined within the block/method/constructor
+    and these are created when the block is entered or the function called and destroyed after exiting from the block or when the call returns from the function
+    Initialization required otherwise we will get compile time error
+Instance variable:these variable defined outside the block/method/constructor
+    these were created after creating the object and destroyed when the object destroyed
+    We use the access modifiers otherwise it will defined as default
+    Initialization is not required by default String=null,int=0,float=0.0f for Wrapper class like integer it is null etc.
+Static variable: thus are similar to instance variables and also called as class variables
+    initialization for static variable not mandatory
+    default value is dependent on the data type of variable. For String it is null, for float it is 0.0f, for int it is 0, for Wrapper classes like Integer it is null, etc. 

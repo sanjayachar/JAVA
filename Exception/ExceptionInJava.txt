@@ -1,0 +1,90 @@
+Exception:It is an unwanted or unexpected event which occurs during the execution of a program, i.e. at runtime that disturbs
+the normal flow of the  program's instructions.
+
+When an exception occurs within a method, it creates an object
+
+This object is called exception object. It contains information about the exception, such as name and description of the exception
+and the state of the program when exception occured.
+
+Exception Handling: In java to handle the disturbance occured in the normal flow of the program we use Exception
+the disturbance like class not found(ClassNotFoundException), io(IOException), sql(SQLException), remote(RemoteException), etc.
+ 
+Error: It represent irrecoverable conditions such as JVM runs out of memory, memory leaks, stack over flow, infinite recursion, etc
+
+Typs of exception:
+---------------------
+1)Built-in Exception
+2)User-Defined Exception
+
+In built in exception we have two types:
+1)Checked Exception
+2)Unchecked Exception
+
+Built-In Exception:
+-----------------------
+Built in exception are the exception which are available in the Java libraries.
+1)Checked: It is also called compile-time exception bcz these are checked at compile-time by the compiler.
+2)Unchecked: The compiler will not check these exceptions at compile time. If a program throws an Unchecked exception, and even
+            if we didn't handle or declare it, the program would not give a compile error.
+
+User Defined Exception: are the exception which are created by the User
+
+Methods to print the exception information:
+
+1)printStackTrace():-This method prints exception information in the form of Name of the exception:description of the exception
+2)toString():-This method also
+3)getMessage():-This method prints only the description of the exception.
+
+
+How does JVM handle an Exception:
+----------------------------------
+>Whenever inside a method, if an exception has occured, the method creates an object known as Exception and it will hand over to the JVM.
+
+>This object contains name and description of an exception.
+
+>Creating the Exception object and handling it in runtime system is called throwing an exception.
+
+>There may be a list of methods and JVM checks whether method contains Exception handling code or not.
+
+>This methods are called Call Stack.
+
+>If JVM finds an appropriate handler(method that can handles the appropriate exception that has occured), then it passes the occured exception to it.
+
+>If JVM can't search the appropriate handler, then the JVM handover the exception object to the default exception handler,
+which is the part of the JVM.
+
+>This handler prints the exception info in the following format and terminates the program abnormally.
+    Exception in thread "xxx" Name of Exception: description
+    ..... ...... ........// Call Stack.
+eg:
+divideByZero(){
+    int num;
+    computeDivision(num);
+}       
+    |(This will looks for appropriate handler)
+    |
+    |
+    \/
+computeDivision(int num){
+    sout(num/0);
+}
+    |(If the JVM didn't find the exception handler in this method then it will move forward to the main method)
+    |
+    |
+    \/
+main(){
+    (If JVM finds hear then it will passes the exception object created from divideByZero() method to main methd)
+    (If JVM didn't find then JVM will calles the default method which is inside it)
+}
+
+Customized Exception Handling: Custom exception handling is by using: try, catch, throw, throws and finally.
+
+Important point on throws :
+----------------------------
+1)throws keyword is required only for checked exceptions and usage of the throws keyword for Unchecked exceptions 
+is meaningless.
+
+2)throws keyword is required only to convince the compile and usage of the throws keyword doesn't prvent abnormal termination 
+of the program.
+
+3)With the help of the throws keyword, we can provide information to the caller of the method about the exception.

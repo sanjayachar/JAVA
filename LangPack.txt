@@ -1,0 +1,31 @@
+this package provides classes that are fundamental to the design of the java programming
+language
+
+The most important classes are:
+-------------------------------------
+1)Wrapper classes(Boolean, Integer, Character, Byte, Short etc): wraps up the primitive datatypes
+to objects
+
+2)Class-Set1, Set2:Instance of the class
+
+3)Compiler:The Compiler class provided to support java-to-native-code compilers  and relted services
+
+4)Enum:This is the common base class for evry java enumeration
+
+5)Number:It is the super class of the Byte, Double, Integer etc
+
+6)Object: it is super class of all other class
+
+7)String: This class represents the character string
+
+8)StringBuffer: A thread safe, mutable sequance character
+
+9)StringBuilder: A thread unsafe, mutable sequance character
+
+10)Thread: A thread is a thread of execution in a programming
+
+11)ThreadGroup:This will represents the set of thread
+
+12)Throwable: It is the super class of all checked and unchecked exception
+
+13)Void

@@ -1,0 +1,34 @@
+Wrapper classes wraps the Premitive Datatypes into objects.
+
+Need:
+    1.Objects are needed if we wish to modify the arguments passed into a method(bcz private Datatypes are pass by value)
+    2.The class java.util package handles only Objects
+    3.DS in the collection framework, such as ArrayList and Vector, store only objects(reference types) and not primitive types.
+    4.An object is needed to support synchronization in multithreading.
+
+Advantages:
+    1.Collections allowed only object data.
+    2.On object data we can call multiple method compareTo(), equals(), toString().
+    3.Cloning process only objects.
+    4.Object data only allow null values.
+    5.Serialization can allow only object data.
+
+Autoboxing: Conversion of primitive types to object is called Autoboxing.
+    eg: char ch = 'a';
+ 
+        // Autoboxing- primitive to Character object
+        // conversion
+        Character a = ch;
+ 
+        ArrayList<Integer> arrayList
+            = new ArrayList<Integer>();
+
+Unboxing: It is just a reverse process of the Autoboxing.
+    eg:   Character ch = 'a';
+ 
+        // unboxing - Character object to primitive
+        // conversion
+        char a = ch;
+ 
+        ArrayList<Integer> arrayList
+            = new ArrayList<Integer>();

@@ -1,0 +1,9 @@
+When to use abstract
+
+In the java aplication, there are some related classes that need to share some lines of code means 
+if we want some non-abstract, non-final or non-static fields or methods we can use abstraction
+
+When to use interface
+
+In the application where all methods declared within an interface must be implemented by the classes that implements ths interface 
+,bcz It is a total abstraction unlike abstract that having both abstract methods and non-abstract method which is accessible by reference

@@ -1,0 +1,9 @@
+package Annotations;
+/*Annotations in java are a form of metadata that provides additional information about the code elements 
+ * such as classes, methods, fields, or parameters
+ * 
+ * Annotations start with the @ symbol, followed by the annotation name.
+ */
+public class AnnotationsIn {
+    
+}

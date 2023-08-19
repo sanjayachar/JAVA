@@ -1,0 +1,32 @@
+Pure OOP language which doesn't supports the feature called primitive datatypes like int,char,float bool etc
+
+There are 7 qualities to be satisfied for a programming language to be object oriented they are:
+-------------------------------------------------------------------------------------------------
+1)Encapsulation/Data hiding
+2)Inheritance
+3)Polymorphism
+4)Abstraction
+5)All predefined types(primitive datatypes) are objects
+6)All user defined types are objects
+7)All operation performed on objects must be only through methods exposed at the objects
+
+why java is not a pure oop bcz :java doesn't supports property 5 and 7 
+
+And bellow reasons will explain why java is not a pure oop bcz
+--------------------------------------------------------------
+->Primitive datatypes ex.int, long, float, bool etc etc as objects:
+    Smalltalk(programming language) is a pure oop unlike c++ and java aren't because
+    , In Smalltalk primitive values such as integer, booleans and characters are also objects
+    in java and c++ we have prdefined types called primitive datatypes(non-objects)
+->The stataic keyword:
+    If class is declared as a static then it can be used without the use of an object
+    If we declare fuctions or variables as static then we need not to create object or we can't call
+    that function or variable by using dot(.).
+->Wrapper class:
+    Wrapper class provides the mechanism to convert primitive into object and object into primitive
+    we can use Integer, Float etc instead of int, float etc.
+    even if we use Wrapper classes java is not pure oop language, bcz internally it will
+    use the operations like Unboxing and Autoboxing
+    If we create Integer instead of int and do mathamatical operation on it, java is going to use
+    primitive type int only
+

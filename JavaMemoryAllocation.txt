@@ -1,0 +1,44 @@
+Java Memory Structure
+
+JVM defines various run time data area which are used during execution of a program.
+Memory is created by the JVM is destroyed only when the JVM exits.
+
+1)Heap:
+-----------
+It is a shared runtime data area and stores the actual object in a Memory
+
+This memory is allocated for all class instances and array. Heap can be fixed or dynamica size
+depending upon the system's configuration.
+
+Scanner sc=new Scanner(System.in);
+
+The Above statement creates the object of Scanner class inside the heap adn whereas the 
+reference 'sc' in pushed to the stack.
+
+Garbage collector is compulsory in haep area.
+
+2)Method areas:
+--------------
+It is logical part of the heap area and is created on virtual machine startup.
+
+This memory is allocated for class structures, method data and constructor field data, and 
+also for interfaces or special method used in class.
+
+3)JVM Stacks:
+-----------------
+A stack is craeted when the same time thread is created and is used to store local variable
+, partial variable and data for method invocations and returns
+
+Stack can either be of fixed or dynamic size. 
+
+4)Native method Stacks:
+-----------------------
+Also called as C stacks, native method stacks are not written in Java language. This memory
+is allocated for each thread when it's created. And it can be of fixed or dynamic nature.
+
+5)Program Counter(PC) registers:
+-----------------------------------
+The JVM supports multiple threads at the same time. Each thread has its own PC Register to hold the
+address of the currently executing JVM instruction.
+
+Once the instruction is executed, the PC register is updated with the next instruction.

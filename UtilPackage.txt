@@ -1,0 +1,41 @@
+in java.util package following classes are there:
+--------------------------------------------------
+1)Collection frame works
+2)legacy Collection classes(HashTable, Stack, Dictionary, Properties, Vector)
+3)Event model(Event Handling classes)
+4)Date and time facilities
+5)Miscellaneous utility classes(a string tokenizer, a random-number generator, and a bit array)
+
+Major classes
+---------------------
+1)AbstractCollection:This class provides a skeletal implementation of the Collection interface
+
+2)AbstractList:This class provides a skeletal implementation of the List interface
+
+3)AbstractMap<K,V>, AbstractQueue, AbstractSet, AbstractDequeue: These classes gives the skeletal implementation of their respective
+
+4)ArrayList:Resizable-array implementation of the List interface
+
+5)Arrays:This class contains various methods to manipulat array(such as sorting and searching)
+
+6)Calander:The Calander class is an abstract class provides method for converting between specific
+instant in time and a set of calendar fields such as YEAR, MONTH, DAY_OF_MONTH, HOUR and so on
+
+7)Collections: This class consists exclusively of static methods that operate on or return Collections
+
+8)Currency: Represents a Currency
+
+9)Date
+
+10)Dictionary<K,V>:This class is the abstract class which is super class of any class such as HashTablewhich maps keys to values.
+
+11)EnumMap(enum type implementation of Map), EnumSet(enum type implementation of Set)
+
+12)EventListenerProxy:It is an abstract wrapper class for EventListener
+
+13) All the classes inside the Collections
+
+14)Random:An instance of this class will generates the random numbers.
+
+15)Scanner:A simple text scanner which can parse primitive types and strings using regular expressions.
+

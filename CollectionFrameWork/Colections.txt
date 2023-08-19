@@ -1,0 +1,47 @@
+Java collection framework is a group of individual objects which are represented as a single unit
+So in JDK 1.2, a seperate freamework was defined known as "Collection framework" which holds all the collectionclasses and interface in it.
+
+The root of every collection classes are
+1)Collection interface
+2)Map interface
+
+What is framework:It is a set of classes and interfaces wg=hich provides ready-made architechture
+
+Collection:A group of individual objects that represent a single entity is known as a collection
+
+Collection framework:The ready-made classes and interfaces which represents the group of objects in single entity
+
+Collection interface:
+Collection classes
+
+                                                        Iterable(interface)
+                                                            |
+                    ------------------------------------------------------------------------------------
+                    |                                                                                  |
+            Collection(interface)                                                                 Map(interface)
+                    |                                                                                  |
+    -----------------------------------                                         -----------------------------------------------
+    |               |                  |                                        |                                             |
+    List           Set              Queue                                   SortedMap                                       AbstractMap
+    (interface) (interface)       (interface)                               (interface)                                     (class)
+    |               |                   |                                       |                                               |
+    --ArrayList     |                ----------                             NavigableMap                                ---------------
+    |  (class)      |               |         |                              (interface)                                |              |
+    --Vector        |           Deque       PriorityQueue                       |                                   HashMap         EnumMap
+    |  (class)      |          (interface)  (class)                           TreeMap                              (class)          (class)
+    |               |             |                                            (class)                                 |
+    |               |           -------                                                                            LinkedHashMap
+    |               |          |       |                                                                               (class)
+    --LinkedList<---|-----------     ArrayDeque
+      (class)       |                  (class)
+                    |
+        ------------------------
+        |                      |
+    SortedSet               AbstractSet     
+    (interface)             (class)     
+        |                       |
+    NavigableSet      EnumSet---------HashSet
+    (interface)       (class)         (class)
+        |                                |
+     TreeSet                        LinkedHashSet
+     (interface)                       (class)
