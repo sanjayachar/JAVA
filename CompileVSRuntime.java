@@ -1,5 +1,5 @@
-/*Compile time:Whenever an object is bound with its functionality at the compile time
- * Run time:Whenver an object is bound its functionality at run ti,e
+/*Compile time:Whenever an object is bound with its functionality at the compile time.
+ * Run time:When ever an object is bound it's functionality at run time.
  */
 class Test{
     public void meth(int a){
