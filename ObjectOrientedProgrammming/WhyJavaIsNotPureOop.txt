@@ -20,8 +20,7 @@ And bellow reasons will explain why java is not a pure oop bcz
     in java and c++ we have prdefined types called primitive datatypes(non-objects)
 ->The stataic keyword:
     If class is declared as a static then it can be used without the use of an object
-    If we declare fuctions or variables as static then we need not to create object or we can't call
-    that function or variable by using dot(.).
+    If we declare fuctions or variables as static then we need not to create object or we can call using class name or even we can call without reference of object.
 ->Wrapper class:
     Wrapper class provides the mechanism to convert primitive into object and object into primitive
     we can use Integer, Float etc instead of int, float etc.
