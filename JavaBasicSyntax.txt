@@ -1,6 +1,7 @@
 Java program is an oop language, that means java is the collection of objects, and these objects communicate through the method calls
 
-				Basic terminologies in java
+Basic terminologies in java
+----------------------------
 1.Class: The class is a blueprint to create an object/It also defined as a logical template that is to create an object.
 
 2.Object: The object is an instance of a class/It is an entity that has behavior and state.
@@ -13,26 +14,26 @@ in java code the instance variable are mentioned outside the methods for eg:
 		public class Employee {
 			public String Name; // Name is an instance variable with public access modifier
 			private int salary ; // salary is an instance variable with private access modifier.
-			public static String company; // Company is not an instance variable as it is Static, and the value it holds is class specific but not instance.
+			public static String company; // Company is not an instance variable as it is Static, and the value it holds is class specific but not 							     //instance.
 			}
+
 5.public static void main(String...args): the main methos is the entry point of any java application 
 	public: Access modifier which means method can be used publically
 	static: Static is independent of an object which means there is need not be create and object for main method.
 	void: Return type, main method will not return any.
 	common question: why main method is static:-because JVM can invoke it without instantiating the class
- Datatypes:
+6.Datatypes:
 	Premitive Datatypes:-boolean(1bit), byte(8bit), char(16bit), short(16bit), int(32 bit),long(64bit), float(32bit), double(64bit).
 	Non-Premitive Datatypes:-Strings(stream of char or array of char),
-							 Class(template or blueprint to create an object):-class components
-							 		1)modifiers,2)Class name,3)Super class,4)Interfaces,5)Body:surrounded by braces{},
-							 Object():It also called basic unit and represents real-timr entities and it consists of
+				 Class(template or blueprint to create an object):-class components
+							 		           1)modifiers,2)Class name,3)Super class,4)Interfaces,5)Body:surrounded by {}										
+				 Object():It also called basic unit and represents real-timr entities and it consists of
 							 			1)State:It reflects the properties of an object
 										2)Behavior:It represented by the methods
-										3)Identity:It gives unique name to an object and enables one object to interact with other objects
-							 Interfaces:Like class Interfaces have methods and variables but when it comes to method only method signature rather it doesn't have bady
-							 			It sets the blueprint for child classes
-							 Array:Array is dynamically allocated in java so it stores a group of like-typed variables
-							 	   Array in java is diferrent than C/C++,
-									 ->Since Arrays are objects in java so we can find their length using member length(variable).
-									 	Where as it is different than C/C++ where we find length using size.
-									 ->Every array type implements the Interfaces Clonable and java.io.Serializable.
+										3)Identity:It gives unique name to an object and enables one object to interact 											   with other objects
+				 Interfaces:Like class Interfaces have methods and variables but when it comes to method only method signature rather it doesn't 					    have bady, It sets the blueprint for child classes
+				 Array:Array is dynamically allocated in java so it stores a group of like-typed variables
+				       Array in java is diferrent than C/C++,
+					->Since Arrays are objects in java so we can find their length using member length(variable).
+				          Where as it is different than C/C++ where we find length using size.
+					 ->Every array type implements the Interfaces Clonable and java.io.Serializable.
