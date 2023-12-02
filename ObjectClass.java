@@ -1,4 +1,4 @@
-/*Object class is father of all class means it's super class of all classes
+/*Object class is father of all class means it is a super class of all classes
  * there are mainly 9 methods
  * getClass(),hashCode(), wait(), toString(), clone(),
  * equals(), finalize(), notify(), notifyall()
@@ -59,7 +59,7 @@ public class ObjectClass implements Cloneable{
         ObjectClass obj1=new ObjectClass("Nothing", "Sanjay", 0000);
         System.out.println(obj1);
         
-        //crating clone using clone method
+        //crating clone or shallow copy of an object using clone method 
         ObjectClass obj2=obj1.clone();
         
         //prinitng the hashcode
