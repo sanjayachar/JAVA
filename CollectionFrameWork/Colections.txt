@@ -15,7 +15,7 @@ Collection interface:
 Collection classes
 
                                                         Iterable(interface)
-                                                            |
+                                                               |
                     ------------------------------------------------------------------------------------
                     |                                                                                  |
             Collection(interface)                                                                 Map(interface)
@@ -27,11 +27,11 @@ Collection classes
     |               |                   |                                       |                                               |
     --ArrayList     |                ----------                             NavigableMap                                ---------------
     |  (class)      |               |         |                              (interface)                                |              |
-    --Vector        |           Deque       PriorityQueue                       |                                   HashMap         EnumMap
-    |  (class)      |          (interface)  (class)                           TreeMap                              (class)          (class)
-    |               |             |                                            (class)                                 |
-    |               |           -------                                                                            LinkedHashMap
-    |               |          |       |                                                                               (class)
+    --Vector        |           Deque       PriorityQueue                       |                                   EnumMap         HashMap
+    |  (class)      |          (interface)  (class)                           TreeMap                               (class)         (class)
+    |               |             |                                            (class)                                                 |
+    |               |           -------                                                                                          LinkedHashMap
+    |               |          |       |                                                                                             (class)
     --LinkedList<---|-----------     ArrayDeque
       (class)       |                  (class)
                     |
