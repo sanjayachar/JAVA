@@ -25,11 +25,11 @@ Collection classes
     List           Set              Queue                                   SortedMap                                       AbstractMap
     (interface) (interface)       (interface)                               (interface)                                     (class)
     |               |                   |                                       |                                               |
-    --ArrayList     |                ----------                             NavigableMap                                ---------------
-    |  (class)      |               |         |                              (interface)                                |              |
-    --Vector        |           Deque       PriorityQueue                       |                                   EnumMap         HashMap
-    |  (class)      |          (interface)  (class)                           TreeMap                               (class)         (class)
-    |               |             |                                            (class)                                                 |
+    --ArrayList     |                ----------                             NavigableMap                                --------|------
+    |  (class)      |               |         |                              (interface)                                |       |      |
+    --Vector        |           Deque       PriorityQueue                       |                                   EnumMap     |   HashMap
+    |  (class)      |          (interface)  (class)                           TreeMap                               (class)     |   (class)
+    |               |             |                                            (class)  <---------------------------------------|      |
     |               |           -------                                                                                          LinkedHashMap
     |               |          |       |                                                                                             (class)
     --LinkedList<---|-----------     ArrayDeque
@@ -40,8 +40,8 @@ Collection classes
     SortedSet               AbstractSet     
     (interface)             (class)     
         |                       |
-    NavigableSet      EnumSet---------HashSet
-    (interface)       (class)         (class)
-        |                                |
-     TreeSet                        LinkedHashSet
+    NavigableSet      EnumSet<--|----->HashSet
+    (interface)       (class)   |     (class)
+        |                       |        |
+     TreeSet <------------------|   LinkedHashSet
      (interface)                       (class)
